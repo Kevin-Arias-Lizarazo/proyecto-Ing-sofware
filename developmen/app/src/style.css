@@ -1,0 +1,43 @@
+:root {
+	--color-primary: #ffd600;
+	/* Amarillo neón (principal) */
+	--color-secondary: #0066ff;
+	/* Azul eléctrico más intenso */
+	--color-accent: #ff5722;
+	/* Naranja vibrante */
+	--color-dark: #212121;
+	/* Gris oscuro elegante */
+	--color-light: #ffffff;
+	/* Blanco puro */
+	--color-success: #43ea80;
+	/* Verde éxito llamativo */
+	--color-danger: #e53935;
+	/* Rojo alerta */
+	--color-info: #2979ff;
+	/* Azul info */
+}
+
+/* Estilos generales */
+body {
+	margin: 0;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+	background-color: var(--color-dark);
+	color: white;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stack-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-with-header {
+	margin-top: 0px;
+	/* Ajusta este valor a la altura real de tu header fijo */
+}

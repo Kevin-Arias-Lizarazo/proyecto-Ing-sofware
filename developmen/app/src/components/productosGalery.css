@@ -1,0 +1,87 @@
+.productos-galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.producto-card {
+  background: var(--color-light, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(33, 33, 33, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.producto-card:hover {
+  box-shadow: 0 4px 16px rgba(33, 33, 33, 0.16);
+}
+
+.producto-card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.producto-card__info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto-card__nombre {
+  font-size: 1.1rem;
+  color: var(--color-dark, #212121);
+  margin: 0 0 0.5rem 0;
+}
+
+.producto-card__descripcion {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+  flex: 1;
+}
+
+.producto-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.producto-card__year {
+  color: var(--color-secondary, #0066ff);
+}
+
+.producto-card__precio {
+  color: var(--color-primary, #ffd600);
+  font-size: 1.15rem;
+}
+
+.productos-galery__empty {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+.producto-card__add-btn {
+  margin-top: 0.75rem;
+  background: var(--color-secondary, #0066ff);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.producto-card__add-btn:hover {
+  background: var(--color-primary, #ffd600);
+  color: var(--color-dark, #212121);
+}

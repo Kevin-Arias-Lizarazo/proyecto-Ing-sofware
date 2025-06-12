@@ -1,0 +1,120 @@
+.cart-container {
+  background: var(--color-light, #fff);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(33,33,33,0.10);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.cart-title {
+  color: var(--color-primary, #ffd600);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cart-empty {
+  color: #888;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cart-item-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.cart-item-info {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: var(--color-dark, #212121);
+}
+
+.cart-item-year {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.cart-item-price {
+  font-size: 1rem;
+  color: var(--color-secondary, #0066ff);
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-item-qty {
+  width: 48px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.cart-item-remove {
+  color: var(--color-danger, #e53935);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.cart-item-remove:hover {
+  color: #b71c1c;
+  text-decoration: underline;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-dark, #212121);
+  margin-top: 2rem;
+}
+
+.cart-pay-btn {
+  display: block;
+  margin: 1.5rem 0 0 auto;
+  background: var(--color-primary, #ffd600);
+  color: var(--color-dark, #212121);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-pay-btn:hover {
+  background: var(--color-secondary, #0066ff);
+  color: #fff;
+}

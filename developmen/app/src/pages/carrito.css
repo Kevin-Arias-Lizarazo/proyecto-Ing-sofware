@@ -1,0 +1,11 @@
+.carrito-page-full {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--color-light, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
